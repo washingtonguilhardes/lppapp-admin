@@ -3,7 +3,8 @@
     "rules": "y"
   },
   "hosting": {
-    "public": "public",
+    "site": "lppappwebdev",
+    "public": "out",
     "ignore": [
       "firebase.json",
       "**/.*",
