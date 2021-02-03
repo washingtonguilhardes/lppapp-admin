@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react'
 
-import AppShell from '@components/app-shell'
+import AppShell from '@components/AppShell'
 
 
-import SuggestionCard from './components/suggestion-card'
-import SuggestionContainer from './components/suggestion-container'
+import SuggestionCard from '../../src/components/treatment-suggestion/suggestion-card'
+import SuggestionContainer from '../../src/components/treatment-suggestion/suggestion-container'
 
 function TreatmentSuggestion() {
 

@@ -1,2 +1,2 @@
-export * from './app-shell'
+export * from './AppShell'
 export * from './page-body'

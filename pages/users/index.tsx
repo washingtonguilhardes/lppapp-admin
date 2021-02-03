@@ -1,6 +1,6 @@
 import React from 'react'
 
-import AppShell from '@components/app-shell'
+import AppShell from '@components/AppShell'
 
 const Users = () => {
   return (

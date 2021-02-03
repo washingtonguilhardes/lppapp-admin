@@ -34,7 +34,6 @@ interface AppSheelProps {
 
 const AppShell: React.FC<AppSheelProps> = (props) => {
 
-  // eslint-disable-next-line react/prop-types
   const { pageTitle, addNewLink, backLink, children } = props;
 
   const classes = useMenuClasses();
@@ -84,7 +83,7 @@ const AppShell: React.FC<AppSheelProps> = (props) => {
           </List>
         </Drawer>
         <main className={classes.root}>
-          <AppBar position="absolute">
+          <AppBar position="absolute" className={classes.appBar} elevation={0}>
             <Toolbar>
               {backLink
                 ? (

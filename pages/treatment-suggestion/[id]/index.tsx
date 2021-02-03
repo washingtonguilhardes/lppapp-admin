@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useRouter } from 'next/router'
 
-import AppShell from '@components/app-shell'
+import AppShell from '@components/AppShell'
 
 function TreatmentSuggestionSingle() {
   const { query } = useRouter();
