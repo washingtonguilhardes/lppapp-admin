@@ -1,9 +1,11 @@
 import React from 'react';
 
 import Paper, { PaperProps } from '@material-ui/core/Paper';
-import { makeStyles, styled } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 import clsx from 'clsx';
+
+
 
 
 interface SectionProps {
@@ -22,10 +24,16 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Section: React.FC<SectionProps & PaperProps> = (props) => {
-  const { className } = props;
-  const classes = useStyles(props);
+  const {
+    className,
+    spacing,
+    gutter,
+    transparent,
+    ...others
+  } = props;
+  const classes = useStyles({ spacing, gutter, transparent, });
   return (
-    <Paper elevation={0} {...props} className={clsx(className, classes.root)} />
+    <Paper elevation={0} {...others} className={clsx(className, classes.root)} />
   )
 }
 
