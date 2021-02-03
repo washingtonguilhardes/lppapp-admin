@@ -1,21 +1,26 @@
-import PageBody from '@components/PageBody'
+
 import React, { createContext, useCallback, useContext, useState } from 'react';
+
 import Head from 'next/head';
 import Link from 'next/link';
-import Paper from '@material-ui/core/Paper';
+
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Drawer from '@material-ui/core/Drawer';
+import Fab from '@material-ui/core/Fab';
+import Icon from '@material-ui/core/Icon';
+import IconButton from '@material-ui/core/IconButton'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import IconButton from '@material-ui/core/IconButton'
-import { useMenuClasses } from './styles';
-import Icon from '@material-ui/core/Icon';
+import Paper from '@material-ui/core/Paper';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
-import Fab from '@material-ui/core/Fab';
+
+import PageBody from '@components/page-body'
+
+import { useMenuClasses } from './styles';
 
 export const AppMenuContext = createContext({} as { open: boolean, toggleMenu: (next: boolean) => void })
 
@@ -78,7 +83,7 @@ const AppShell: React.FC<AppSheelProps> = (props) => {
           </List>
         </Drawer>
         <main className={classes.root}>
-          <AppBar position="absolute">
+          <AppBar position="absolute" className={classes.appBar} elevation={0}>
             <Toolbar>
               {backLink
                 ? (

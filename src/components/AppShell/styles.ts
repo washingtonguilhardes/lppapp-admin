@@ -2,14 +2,19 @@ import { makeStyles, Theme } from '@material-ui/core/styles';
 
 export const useMenuClasses = makeStyles((theme: Theme) => ({
   paper: {
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(2),
-    paddingLeft: theme.spacing(3),
-    paddingRight: theme.spacing(3),
+    // paddingTop: theme.spacing(4),
+    // paddingBottom: theme.spacing(2),
+    // paddingLeft: theme.spacing(3),
+    // paddingRight: theme.spacing(3),
     marginTop: '64px',
     overflow: 'auto',
     maxHeight: 'calc(100vh - 74px)',
     height: '100%',
+    backgroundColor: theme.palette.primary.dark,
+    borderRadius: 0
+  },
+  appBar: {
+    backgroundColor: '#003d34',
   },
   root: {
     flex: 1,

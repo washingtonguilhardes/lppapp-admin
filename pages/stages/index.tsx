@@ -1,5 +1,6 @@
-import AppShell from '@components/AppShell'
 import React from 'react'
+
+import AppShell from '@components/AppShell'
 
 const Stages = () => {
   return (
