@@ -65,8 +65,8 @@ const AppShell: React.FC<AppSheelProps> = (props) => {
             ].map((item) => {
               const { icon, link, title } = item;
               return (
-                <Link href={link}>
-                  <ListItem button key={title}>
+                <Link href={link} key={title}>
+                  <ListItem button >
                     <ListItemIcon>
                       <Icon>{icon}</Icon>
                     </ListItemIcon>

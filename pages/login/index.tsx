@@ -31,7 +31,7 @@ const Login = () => {
           <Grid item xs={12}>
             Entrar com o google
           </Grid>
-          <Grid xs={12}>
+          <Grid item xs={12}>
             <Button variant="contained" color="primary"> TESTE </Button>
           </Grid>
         </Grid>

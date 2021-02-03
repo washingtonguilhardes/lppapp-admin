@@ -27,7 +27,7 @@ export default function MediaCard(props: { item: string }) {
 
   return (
     <Card className={classes.root}>
-      <Link href={`/treatment-suggestion/${item.toLowerCase()}`}>
+      <Link href={`/treatment-suggestion/${item?.toLowerCase()}`}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
