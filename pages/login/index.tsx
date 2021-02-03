@@ -1,10 +1,13 @@
-import PageBody from '@components/PageBody';
-import { Button, } from '@material-ui/core';
+import React from 'react';
+
+
+import { Button } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
-import { palette } from '@theme';
-import React from 'react';
-import styled, { css } from 'styled-components';
+
+import styled from 'styled-components';
+
+import PageBody from '@components/page-body';
 
 const LoginContainer = styled.div`
 width: 300px;

@@ -1,5 +1,8 @@
-import AppShell from '@components/AppShell'
 import React, { useMemo } from 'react'
+
+import AppShell from '@components/app-shell'
+
+
 import SuggestionCard from './components/suggestion-card'
 import SuggestionContainer from './components/suggestion-container'
 

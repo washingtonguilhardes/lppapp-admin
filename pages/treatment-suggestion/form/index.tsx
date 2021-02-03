@@ -1,5 +1,6 @@
-import AppShell from '@components/AppShell'
 import React from 'react'
+
+import AppShell from '@components/app-shell'
 
 const TreatmentSuggestionForm = () => {
   return (

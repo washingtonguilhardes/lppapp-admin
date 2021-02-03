@@ -1,5 +1,6 @@
-import AppShell, { AppMenuContext } from '@components/AppShell'
 import React from 'react'
+
+import AppShell, { AppMenuContext } from '@components/app-shell'
 
 const Coverage = () => {
   return (
